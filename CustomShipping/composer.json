@@ -5,8 +5,8 @@
     "license": "GPL-3.0",
     "authors": [
         {
-            "name": "Mage2Gen",
-            "email": "info@mage2gen.com"
+            "name": "Félix Hoffmann Sebastiany",
+            "email": "felix.sebastiany@compasso.com"
         }
     ],
     "minimum-stability": "dev",
