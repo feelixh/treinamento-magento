@@ -1,0 +1,71 @@
+Meus passos ao instalar Docker e iniciar projeto Magento2.4 em uma máquina com Ubuntu 20.04     obs: Tenho imagem do Magento para docker, com todas dependências e tal
+
+Seguir os passos:
+    - https://docs.docker.com/engine/install/ubuntu/
+    - https://docs.docker.com/engine/install/linux-postinstall/
+    - https://docs.docker.com/compose/install/
+
+
+"Fechar e abrir terminal"
+
+> sudo groupadd docker
+> sudo usermod -aG docker $USER
+
+depois disso reiniciar máquina
+
+> usermod -u 1001 www-data &&  groupmod -g 1001 www-data
+
+> sudo apt-get install vim
+> sudo vim /etc/hosts
+
+na pasta magento2.4
+> sudo chmod -Rf 777 *             Anotação: *(R recursivo  f force)
+
+
+trocar para 1001 nos arquivos da imagem ( dockerfile do magento2.4/images/php/fpm e cli)
+
+
+> docker-compose up --build -d
+> docker-compose exec cli bash
+> composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.4.2 ./
+
+https://marketplace.magento.com/customer/accessKeys/
+
+> magento setup:install \
+--base-url=http://local.magento.com/ \
+--db-host=database \
+--db-name=magento \
+--db-user=magento \
+--db-password=magento \
+--admin-firstname=admin \
+--admin-lastname=admin \
+--admin-email=admin@admin.com \
+--admin-user=admin \
+--admin-password=admin123 \
+--language=pt_BR \
+--currency=BRL \
+--timezone=America/Sao_Paulo \
+--use-rewrites=1 \
+--search-engine=elasticsearch7 \
+--elasticsearch-host=elasticsearch \
+--elasticsearch-port=9200 \
+--amqp-host="queue" \
+--amqp-port="5672" \
+--amqp-user="magento" \
+--amqp-password="magento" \
+--amqp-virtualhost="/" \
+--cache-backend=redis \
+--cache-backend-redis-server=cache \
+--cache-backend-redis-db=0 \
+--page-cache=redis \
+--page-cache-redis-server=cache \
+--page-cache-redis-db=1 \
+--session-save=redis \
+--session-save-redis-host=cache \
+--session-save-redis-log-level=4 \
+--session-save-redis-db=2 \
+--cleanup-database
+
+
+Mudar url do admin e colocar em modo Developer (magento/app/etc/env)
+Desativar módulo de duplo Factor
