@@ -21,3 +21,4 @@
 - [x] Adição de novo método de entrega (CustomShipping)
 - [ ] Criação de comando para listagem de pedidos (List Orders)
 - [ ] Criação de plugin para aceitar login via E-mail ou CPF
+- [ ] Criação de email_template
