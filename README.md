@@ -18,6 +18,12 @@
 ### Features
 
 - [x] [Tutorial](instalation.txt) de instalação Magento 2.4 via docker
+- [ ] Explicação Estrutura Magento
+- [ ] Explicação + Exemplo Observers
+- [ ] Explicação + Exemplo Plugins
+- [ ] Explicação + Exemplo Preference
+- [ ] Explicação + Exemplo API
+- [ ] Explicação + Exemplo Banco de Dados
 - [x] Adição de novo método de entrega (CustomShipping)
 - [ ] Criação de comando para listagem de pedidos (List Orders)
 - [ ] Criação de plugin para aceitar login via E-mail ou CPF
