@@ -64,7 +64,8 @@ https://marketplace.magento.com/customer/accessKeys/
 --session-save-redis-host=cache \
 --session-save-redis-log-level=4 \
 --session-save-redis-db=2 \
---cleanup-database
+--cleanup-database \
+--backend-frontname=admin
 
 
 Mudar url do admin e colocar em modo Developer (magento/app/etc/env)
