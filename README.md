@@ -24,7 +24,7 @@
 - [ ] Explicação + Exemplo Preference
 - [ ] Explicação + Exemplo API
 - [ ] Explicação + Exemplo Banco de Dados
-- [x] Adição de novo método de entrega (CustomShipping)
-- [x] Criação de comando para listagem de pedidos (List Orders)
-- [x] Criação de plugin para aceitar login via E-mail ou CPF
+- [x] Adição de novo método de entrega ([CustomShipping](CustomShipping))
+- [x] Criação de comando para detalhar orders ([OrderDetails](OrderDetails))
+- [x] Criação de plugin para aceitar login via E-mail ou CPF ([CustomLogin](CustomLogin))
 - [ ] Criação de email_template
