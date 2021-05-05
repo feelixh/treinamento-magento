@@ -20,7 +20,7 @@
 - [x] [Tutorial](instalation.txt) de instalação Magento 2.4 via docker
 - [ ] Explicação Estrutura Magento
 - [x] Desafio + Exemplo Observers ([ObserverExample](ObserverExample))
-- [ ] Desafio + Exemplo Plugins
+- [ ] Desafio + Exemplo Plugins ([PluginExample](PluginExample))
 - [ ] Desafio + Exemplo Preference
 - [ ] Desafio + Exemplo API
 - [ ] Desafio + Exemplo Banco de Dados
