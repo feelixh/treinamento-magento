@@ -21,7 +21,7 @@
 - [ ] Explicação Estrutura Magento
 - [x] Desafio + Exemplo Observers ([ObserverExample](ObserverExample))
 - [x] Desafio + Exemplo Plugins ([PluginExample](PluginExample))
-- [ ] Desafio + Exemplo Preference
+- [x] Desafio + Exemplo Preference ([PreferenceExample](PreferenceExample))
 - [ ] Desafio + Exemplo API
 - [ ] Desafio + Exemplo Banco de Dados
 - [x] Adição de novo método de entrega ([CustomShipping](CustomShipping))
