@@ -1,18 +1,30 @@
-### Desafios
+#### treinamento-magento
 
 <h1 align="center">
-    💻 Desafio Observer
+    💻 Treinamento Magento
 </h1>
+<p align="center">🚀 Repositório contendo algumas práticas de estudo acerca do Magento 2.4</p>
 
-###🧠 Proposta:
 
-<h4>
-    Desenvolver um módulo observer que utilize o evento: <p style="background-color:darkgrey; color: #0a0a0a; align:center;">customer_data_object_login</p>
-    O módulo deve retornar um print_r() com o nome completo do customer (nome e sobrenome).
+
+
+
+
+
+<h4 align="center"> 
+	🚧  treinamento-magento 🚀 Em evolução...  🚧
 </h4>
 
-###🔑 Dica:
-<h4>
-    Api para Debug:
-<p style="margin-left: 15px">/rest/V1/integration/customer/token</p>
-</h4>
+### Features
+
+- [x] [Tutorial](instalation.txt) de instalação Magento 2.4 via docker
+- [ ] Explicação Estrutura Magento
+- [x] Desafio + Exemplo Observers ([ObserverExample](ObserverExample))
+- [ ] Desafio + Exemplo Plugins
+- [ ] Desafio + Exemplo Preference
+- [ ] Desafio + Exemplo API
+- [ ] Desafio + Exemplo Banco de Dados
+- [x] Adição de novo método de entrega ([CustomShipping](CustomShipping))
+- [x] Criação de comando para detalhar orders ([OrderDetails](OrderDetails))
+- [x] Criação de plugin para aceitar login via E-mail ou CPF ([CustomLogin](CustomLogin))
+- [ ] Criação de email_template
