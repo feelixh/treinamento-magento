@@ -1,5 +1,3 @@
-Meus passos ao instalar Docker e iniciar projeto Magento2.4 em uma máquina com Ubuntu 20.04     obs: Tenho imagem do Magento para docker, com todas dependências e tal
-
 Seguir os passos:
     - https://docs.docker.com/engine/install/ubuntu/
     - https://docs.docker.com/engine/install/linux-postinstall/
