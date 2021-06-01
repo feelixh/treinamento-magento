@@ -32,7 +32,7 @@
 
     Demonstração:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/feelixh/treinamento-magento/develop/Installation/img/hosts.png" width="350" title="Demonstração">
+  <img src="https://raw.githubusercontent.com/feelixh/treinamento-magento/develop/Installation/img/hosts.png" width="400" title="Demonstração">
 </p>
 
 7. Com o projeto instalado, você pode abrir o bash (CLI):
@@ -45,7 +45,7 @@
     - local.magento.com
     - local.magento.com/admin
     
-####Acesso ao painel admin:
+#### Acesso ao painel admin:
 
 login: admin
 
