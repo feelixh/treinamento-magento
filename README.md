@@ -17,7 +17,7 @@
 
 ### Features
 
-- [x] [Tutorial](instalation.txt) de instalação Magento 2.4 via docker
+- [x] [Tutorial](Installation) de instalação Magento 2.4 através do Docker Compose
 - [ ] Explicação Estrutura Magento
 - [x] Desafio + Exemplo Observers ([ObserverExample](ObserverExample))
 - [x] Desafio + Exemplo Plugins ([PluginExample](PluginExample))

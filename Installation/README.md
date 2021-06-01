@@ -1,70 +1,57 @@
-Seguir os passos:
-    - https://docs.docker.com/engine/install/ubuntu/
-    - https://docs.docker.com/engine/install/linux-postinstall/
-    - https://docs.docker.com/compose/install/
+#### treinamento-magento
+
+<h1 align="center">
+    🔨 Instalação Magento 2.4
+</h1>
+<p align="center">Esse guia descreve o passo-a-passo para instalação do Magento 2.4 a partir do Docker Compose.</p>
 
 
-"Fechar e abrir terminal"
+### Requisitos
+- [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)
+- [Pós Instalação Docker no Linux](https://docs.docker.com/engine/install/linux-postinstall/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
-> sudo groupadd docker
-> sudo usermod -aG docker $USER
+### Passo-a-passo 
+1.  Baixar e extrair o projeto em seu local de preferência.
+    [Download](https://github.com/feelixh/treinamento-magento/raw/develop/Installation/magento2.4.zip)
+    
+2. Abrir o projeto através do terminal, e conceder permissões de acesso:
+    > sudo chmod -Rf 777 *
 
-depois disso reiniciar máquina
+3. Conceder permissão de execução de scripts ao diretório /bin:
+    > chmod +x *
 
-> usermod -u 1001 www-data &&  groupmod -g 1001 www-data
+4. Executar o comando de criação e instalação do projeto:
+    > ./bin/create-project
 
-> sudo apt-get install vim
-> sudo vim /etc/hosts
+5. Conceder novamente permissões de acesso ao diretório:
+    > sudo chmod -Rf 777 *
 
-na pasta magento2.4
-> sudo chmod -Rf 777 *             Anotação: *(R recursivo  f force)
+6. Adicionar a url "local.magento.com" ao arquivo de hosts apontando para o endereço local e salvar:
+    > vim /etc/hosts
 
+    Demonstração:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/feelixh/treinamento-magento/develop/Installation/img/hosts.png" width="300" title="Demonstração">
+</p>
 
-trocar para 1001 nos arquivos da imagem ( dockerfile do magento2.4/images/php/fpm e cli)
+7. Com o projeto instalado, você pode abrir o bash (CLI):
+    > ./bin/bash
 
+8. Dentro do CLI, pode utilizar comandos do Magento. Comece com:
+    > magento setup:di:compile
+   
+9. Após, teste acessando as urls:
+    - local.magento.com
+    - local.magento.com/admin
+    
+####Acesso ao painel admin:
+login: admin
 
-> docker-compose up --build -d
-> docker-compose exec cli bash
-> composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.4.2 ./
-
-https://marketplace.magento.com/customer/accessKeys/
-
-> magento setup:install \
---base-url=http://local.magento.com/ \
---db-host=database \
---db-name=magento \
---db-user=magento \
---db-password=magento \
---admin-firstname=admin \
---admin-lastname=admin \
---admin-email=admin@admin.com \
---admin-user=admin \
---admin-password=admin123 \
---language=pt_BR \
---currency=BRL \
---timezone=America/Sao_Paulo \
---use-rewrites=1 \
---search-engine=elasticsearch7 \
---elasticsearch-host=elasticsearch \
---elasticsearch-port=9200 \
---amqp-host="queue" \
---amqp-port="5672" \
---amqp-user="magento" \
---amqp-password="magento" \
---amqp-virtualhost="/" \
---cache-backend=redis \
---cache-backend-redis-server=cache \
---cache-backend-redis-db=0 \
---page-cache=redis \
---page-cache-redis-server=cache \
---page-cache-redis-db=1 \
---session-save=redis \
---session-save-redis-host=cache \
---session-save-redis-log-level=4 \
---session-save-redis-db=2 \
---backend-frontname=admin \
---cleanup-database
+senha: admin123
 
 
-Mudar url do admin e colocar em modo Developer (magento/app/etc/env)
-Desativar módulo de duplo Factor
+
+## Contribuintes
+
+- [Tadeu Rodrigues](https://github.com/TadeuRodrigues)
