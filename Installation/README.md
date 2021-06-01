@@ -3,7 +3,7 @@
 <h1 align="center">
     🔨 Instalação Magento 2.4
 </h1>
-<p align="center">Esse guia descreve o passo-a-passo para instalação do Magento 2.4 a partir do Docker Compose.</p>
+<p align="center">Esse guia descreve o passo-a-passo para instalação do Magento 2.4 no Ubuntu a partir do Docker Compose.</p>
 
 
 ### Requisitos
